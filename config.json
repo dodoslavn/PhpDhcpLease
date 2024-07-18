@@ -1,6 +1,8 @@
 {
 	"configuration": {
-		"wol_binary": "/usr/bin/wakeonlan",
+		"lease_files": {
+			"ipv4_01": "/var/lib/dhcp/dhcpd.leases"
+			},
 		"language": "en"
 	},
 	"data": [
