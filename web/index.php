@@ -22,7 +22,7 @@ foreach ($config->configuration->lease_files as $lease_file)
 	{
 	echo $lease_file."<br>";
 	$exploded =  explode("lease", file_get_contents($lease_file) );
-	echo $exploded[0];
+	echo $exploded[1];
 	}
 
 ?>
