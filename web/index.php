@@ -31,7 +31,7 @@ foreach ($config->configuration->lease_files as $lease_file)
 		$exploded = explode(" ", $one_lease);
 		if ( count($exploded) > 12 )
 			{
-			for ($x = 13; $x <= count($exploded); $x++)
+			for ($x = 13; $x < count($exploded); $x++)
 				{ $manufacturer = $manufacturer." ".$exploded[$x]; }
 			}
 		
