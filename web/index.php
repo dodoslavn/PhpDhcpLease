@@ -18,10 +18,10 @@ if (empty($config)) die("failed to parse JSON config");
 if (empty($_SESSION['id'])) header('Location: login/');
 
 
-foreach ($config->configuration->lease_files as $user)
+foreach ($config->configuration->lease_files as $lease_file)
 	{
-	echo $user."<br>";
-	echo file_get_contents('../../config.json');
+	echo $lease_file."<br>";
+	echo file_get_contents($lease_file);
 	}
 
 ?>
