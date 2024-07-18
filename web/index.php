@@ -29,7 +29,8 @@ foreach ($config->configuration->lease_files as $lease_file)
 
 	foreach ( $exploded as $one_lease )
 		{
-		echo $one_lease;
+		//echo $one_lease;
+		echo explode(" ", $one_lease)[0];
 		}
 	}
 
