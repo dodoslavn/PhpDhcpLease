@@ -26,9 +26,11 @@ foreach ($config->configuration->lease_files as $lease_file)
 
 	$exploded = preg_split($pattern, file_get_contents($lease_file), -1, PREG_SPLIT_NO_EMPTY);
 	//$exploded =  explode('lease [0-9]', file_get_contents($lease_file) );
-	echo $exploded[0];
-	echo 'aa';
-	echo $exploded[1];
+
+	foreach ( $exploded as $one_lease )
+		{
+		echo $one_lease;
+		}
 	}
 
 ?>
