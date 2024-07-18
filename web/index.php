@@ -21,8 +21,8 @@ if (empty($_SESSION['id'])) header('Location: login/');
 foreach ($config->configuration->lease_files as $lease_file)
 	{
 	echo $lease_file."<br>";
-	$exploded =  explode("lease", file_get_contents($lease_file) );
-	echo $exploded[1];
+	$exploded =  explode("/^lease ", file_get_contents($lease_file) );
+	echo $exploded[4];
 	}
 
 ?>
