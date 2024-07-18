@@ -21,7 +21,8 @@ if (empty($_SESSION['id'])) header('Location: login/');
 foreach ($config->configuration->lease_files as $lease_file)
 	{
 	echo $lease_file."<br>";
-	$pattern = '/^lease\s+\d+/m';
+	$pattern = '/^lease\s/m';
+	//$pattern = '/^lease\s+\d+/m';
 
 	$exploded = preg_split($pattern, file_get_contents($lease_file), -1, PREG_SPLIT_NO_EMPTY);
 	//$exploded =  explode('lease [0-9]', file_get_contents($lease_file) );
