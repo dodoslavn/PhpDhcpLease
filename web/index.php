@@ -1,3 +1,5 @@
+<html>
+<body>
 <?
 
 session_start();
@@ -58,3 +60,6 @@ foreach ($config->configuration->lease_files as $lease_file)
 
 
 ?>
+
+</body>
+</body>
