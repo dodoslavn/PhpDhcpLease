@@ -18,4 +18,6 @@ if (empty($config)) die("failed to parse JSON config");
 if (empty($_SESSION['id'])) header('Location: login/');
 
 
+echo 'aaa';
+
 ?>
