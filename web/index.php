@@ -22,14 +22,14 @@ $binary = $config->configuration->binary;
 
 foreach ($config->configuration->lease_files as $lease_file)
 	{
+	
 	$command = $binary." --parsable --lease ".$lease_file;
 	exec($command, $output, $return_var);
 	foreach($output as $one_lease)
 		{
+		$manufacturer = "";
 		$exploded = explode(" ", $one_lease);
-		if ( count($exploded) == 12 )
-			{ $manufacturer = ""; }
-		else
+		if ( count($exploded) > 12 )
 			{
 			for ($x = 13; $x <= count($exploded); $x++)
 				{ $manufacturer = $manufacturer." ".$exploded[$x]; }
