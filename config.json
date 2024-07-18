@@ -1,0 +1,25 @@
+{
+	"configuration": {
+		"wol_binary": "/usr/bin/wakeonlan",
+		"language": "en"
+	},
+	"data": [
+		{
+			"title": "main_pc",
+			"mac": "38:60:77:60:92:ff",
+			"order": 1
+		},
+		{
+			"title": "second_pc",
+			"mac": "b8:ca:3a:ba:8a:dd",
+			"order": 2
+		}
+	],
+	"users": [
+		{
+			"name": "admin",
+			"pass": "pass",
+			"id": "1"
+		}
+	]
+}
