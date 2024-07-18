@@ -22,7 +22,7 @@ foreach ($config->configuration->lease_files as $lease_file)
 	{
 	$command = $binary." --parsable --lease ".$lease_file;
 	exec($command, $output, $return_var);
-	echo $output;
+	print_r $output;
 	}
 
 
