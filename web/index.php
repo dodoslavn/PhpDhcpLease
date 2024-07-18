@@ -26,7 +26,17 @@ foreach ($config->configuration->lease_files as $lease_file)
 	$exploded = array_slice($exploded, 1);
 	foreach ( $exploded as $one_lease )
 		{
-		echo explode(" ", $one_lease)[0]."<br>";
+		$ip = explode(" ", $one_lease)[0];
+		$content = explode(";", $one_lease);
+		echo '<h4>'.$ip."</h4>";
+		echo '<ul>';
+		foreach($content as $one_line)
+			{
+			echo '<li>';
+			echo $one_line;
+			echo '</li>';
+			}
+		echo '</ul>';
 		}
 	}
 
