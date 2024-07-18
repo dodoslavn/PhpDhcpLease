@@ -30,28 +30,28 @@ foreach ($config->configuration->lease_files as $lease_file)
 		echo '
 <table>
 	<tr>
-		<tr>'.$exploded[0].'</td>
-		<tr>'.$exploded[1].'</td>
+		<td>'.$exploded[0].'</td>
+		<td>'.$exploded[1].'</td>
 	</tr>
 	<tr>
-		<tr>'.$exploded[2].'</td>
-		<tr>'.$exploded[3].'</td>
+		<td>'.$exploded[2].'</td>
+		<td>'.$exploded[3].'</td>
 	</tr>
 	<tr>
-		<tr>'.$exploded[4].'</td>
-		<tr>'.$exploded[5].'</td>
+		<td>'.$exploded[4].'</td>
+		<td>'.$exploded[5].'</td>
 	</tr>
 	<tr>
-		<tr>'.$exploded[6].'</td>
-		<tr>'.$exploded[7].'</td>
+		<td>'.$exploded[6].'</td>
+		<td>'.$exploded[7].'</td>
 	</tr>
 	<tr>
-		<tr>'.$exploded[8].'</td>
-		<tr>'.$exploded[9].'</td>
+		<td>'.$exploded[8].'</td>
+		<td>'.$exploded[9].'</td>
 	</tr>
 	<tr>
-		<tr>'.$exploded[10].'</td>
-		<tr>'.$exploded[11].'</td>
+		<td>'.$exploded[10].'</td>
+		<td>'.$exploded[11].'</td>
 	</tr>
 </table>';
 		}
