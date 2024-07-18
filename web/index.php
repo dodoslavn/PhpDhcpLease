@@ -19,6 +19,9 @@ if (empty($_SESSION['id'])) header('Location: login/');
 
 
 echo 'aaa';
-echo 
+foreach ($config->configuration->lease_files as $user)
+	{
+	echo $user."<br>";
+	}
 
 ?>
