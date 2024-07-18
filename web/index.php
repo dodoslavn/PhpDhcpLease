@@ -27,6 +27,14 @@ foreach ($config->configuration->lease_files as $lease_file)
 	foreach($output as $one_lease)
 		{
 		$exploded = explode(" ", $one_lease);
+		if ( count($exploded) == 12 )
+			{ $manufacturer = ""; }
+		else
+			{
+			for ($x = 13; $x <= count($exploded); $x++)
+				{ $manufacturer = $manufacturer." ".$exploded[$x]; }
+			}
+		
 		echo '
 <table>
 	<tr>
@@ -51,7 +59,7 @@ foreach ($config->configuration->lease_files as $lease_file)
 	</tr>
 	<tr>
 		<td>'.$exploded[12].'</td>
-		<td>'.$exploded[13].'</td>
+		<td>'.$manufacturer.'</td>
 	</tr>
 </table>';
 		}
