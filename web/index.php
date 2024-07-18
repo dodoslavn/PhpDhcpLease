@@ -52,7 +52,8 @@ foreach ($config->configuration->lease_files as $lease_file)
 	<tr>
 		<tr>'.$exploded[10].'</td>
 		<tr>'.$exploded[11].'</td>
-	</tr>';
+	</tr>
+</table>';
 		}
 	}
 
