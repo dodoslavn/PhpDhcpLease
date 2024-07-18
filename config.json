@@ -1,8 +1,9 @@
 {
 	"configuration": {
+		"binary": "sudo /usr/sbin/dhcp-lease-list",
 		"lease_files": {
 			"ipv4_01": "/var/lib/dhcp/dhcpd.leases"
-			},
+		},
 		"language": "en"
 	},
 	"data": [
