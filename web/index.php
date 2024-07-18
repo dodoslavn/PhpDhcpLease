@@ -35,7 +35,7 @@ foreach ($config->configuration->lease_files as $lease_file)
 	</tr>
 	<tr>
 		<td>'.$exploded[2].'</td>
-		<td>'.$exploded[3].$exploded[4]'</td>
+		<td>'.$exploded[3].$exploded[4].'</td>
 	</tr>
 	<tr>
 		<td>'.$exploded[5].'</td>
