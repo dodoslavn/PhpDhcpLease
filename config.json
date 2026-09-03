@@ -4,6 +4,8 @@
 		"lease_files": {
 			"ipv4_01": "/var/lib/dhcp/dhcpd.leases"
 		},
+		"static_lease_file": "/etc/dhcp/static-leases.conf",
+		"reload_cmd": "sudo systemctl reload isc-dhcp-server",
 		"language": "en"
 	},
 	"data": [
