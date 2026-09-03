@@ -23,7 +23,7 @@
 	"users": [
 		{
 			"name": "admin",
-			"pass": "pass",
+			"pass": "$2y$12$hjHCFzK1u3WySOpOC0aEs.i.Sry3lsukNyRJahXFaW8zLatKoKOsi",
 			"id": "1"
 		}
 	]
